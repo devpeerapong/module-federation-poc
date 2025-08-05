@@ -1,5 +1,10 @@
 packages:
-  - cra
-  - vite
-  - next
-  - plain-webpack
+  - apps/*
+
+onlyBuiltDependencies:
+  - '@module-federation/nextjs-mf'
+  - '@swc/core'
+  - core-js
+  - core-js-pure
+  - esbuild
+  - fsevents

@@ -1,0 +1,27 @@
+{
+  "name": "host-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_PRIVATE_LOCAL_WEBPACK=true next dev --port 3005",
+    "build": "NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "PORT=3005 next start"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^8.8.34",
+    "@rspack/core": "^1.4.11",
+    "next": "^14",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "shared": "workspace:*",
+    "webpack": "^5.101.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "typescript": "^5.9.2"
+  }
+}

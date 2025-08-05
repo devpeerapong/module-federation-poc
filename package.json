@@ -1,13 +1,28 @@
 {
-  "name": "mf-poc",
+  "name": "mf2-poc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "pnpm run --parallel serve"
+    "dev": "turbo dev --filter=!shared",
+    "build": "turbo build",
+    "serve": "turbo serve",
+    "clean": "turbo clean"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748",
+  "dependencies": {
+    "turbo": "^2.5.5"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint": "^9",
+        "react": "^19",
+        "typescript": "^5"
+      }
+    }
+  }
 }

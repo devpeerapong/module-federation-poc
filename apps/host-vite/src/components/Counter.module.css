@@ -1,0 +1,14 @@
+.counter {
+  color: salmon;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  background: white;
+  border: 1px solid salmon;
+  border-radius: 4px;
+  transition: background 0.2s, border 0.2s;
+  &:hover {
+    background: salmon;
+    color: white;
+  }
+}

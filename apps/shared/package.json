@@ -1,0 +1,39 @@
+{
+  "name": "shared",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple example library built by tsdown",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs",
+      "type": "./dist/main.d.cts"
+    },
+    "./runtime-plugin/fallback": {
+      "import": "./dist/runtime-plugin/fallback.js",
+      "require": "./dist/runtime-plugin/fallback.cjs",
+      "type": "./dist/runtime-plugin/fallback.d.cts"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "@module-federation/enhanced": "^0.17.1",
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
+    "react": "^19.1.1",
+    "tsdown": "latest"
+  },
+  "dependencies": {
+  }
+}
