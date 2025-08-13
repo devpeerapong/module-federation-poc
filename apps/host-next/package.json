@@ -10,17 +10,17 @@
     "serve": "PORT=3005 next start"
   },
   "dependencies": {
-    "@module-federation/nextjs-mf": "^8.8.34",
+    "@module-federation/nextjs-mf": "^8.8.36",
     "@rspack/core": "^1.4.11",
-    "next": "^14",
+    "next": "^14.2.31",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "shared": "workspace:*",
-    "webpack": "^5.101.0"
+    "webpack": "^5.101.1"
   },
   "devDependencies": {
-    "@types/node": "^24.2.0",
-    "@types/react": "^19.1.9",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "typescript": "^5.9.2"
   }

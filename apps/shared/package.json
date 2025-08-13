@@ -28,12 +28,10 @@
     "dev": "tsdown --watch"
   },
   "devDependencies": {
-    "@module-federation/enhanced": "^0.17.1",
-    "@types/node": "^24.2.0",
-    "@types/react": "^19.1.9",
+    "@module-federation/enhanced": "^0.18.1",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
     "react": "^19.1.1",
     "tsdown": "latest"
-  },
-  "dependencies": {
   }
 }
